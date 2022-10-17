@@ -29,10 +29,10 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseTest {
 
-	public WebDriver driver;
-	public SoftAssert sa;
-	public Properties prop;
-	public Map<String,Map<String,String>> TestData;
+	public static WebDriver driver;
+	public static SoftAssert sa;
+	public static Properties prop;
+	public static Map<String,Map<String,String>> TestData;
 	
 	public static ExtentHtmlReporter htmlReporter;
 	public static ExtentReports extent;
