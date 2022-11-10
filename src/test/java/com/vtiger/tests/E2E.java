@@ -18,7 +18,7 @@ public class E2E extends BaseTest {
 		lp.login(TestData.get(TCName).get("Userid"), TestData.get(TCName).get("Password"));
 		LeadPage ldp = new LeadPage(driver,logger);
 		ldp.ClickNewLead();
-		ldp.createlead(TestData.get(TCName).get("FirstName"), TestData.get(TCName).get("LastName"), TestData.get(TCName).get("Company"));
+		ldp.createlead(TestData.get(TCName).get("FirstName"), TestData.get(TCName).get("LastName"), TestData.get(TCName).get("Company"), TestData.get(TCName).get("Fax"));
 		AccountPage acp = new AccountPage(driver,logger);
 		acp.ClickNewAccount();
 		acp.createaccount(TestData.get(TCName).get("AccountName"));

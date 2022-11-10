@@ -23,15 +23,19 @@ public class LeadPage extends HeaderPage {
 	@FindBy(name="company")
 	WebElement tb_company;
 	
+	@FindBy(name="fax")
+	WebElement tb_fax;
+	
 	@FindBy(name="button")
 	WebElement btn_button;
 	
 	
-	public void createlead(String fname,String lname,String comp)
+	public void createlead(String fname,String lname,String comp, String fax)
 	{
 		setFirstName(fname);
 		setLastName(lname);
 		setCompany(comp);
+		EnterFaxNumber(fax);
 		clickSave();		
 	}
 	
@@ -49,6 +53,12 @@ public class LeadPage extends HeaderPage {
 	{
 		cf.EnterValue(tb_company, comp, comp+" has been entered");
 	}
+	
+	public void EnterFaxNumber(String fax)
+	{
+		cf.EnterValue(tb_company, fax, fax+" has been entered");
+	}
+	
 	public void clickSave()
 	{
 		cf.ClickElement(btn_button, "save button clicked");

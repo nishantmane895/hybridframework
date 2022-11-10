@@ -28,6 +28,7 @@ public class CommonFunctions {
 		wait = new WebDriverWait(driver,Duration.ofSeconds(5));
 	}
 	
+	//To Enter value in a textbox
 	public void EnterValue(WebElement elm,String value,String details)
 	{
 		try {

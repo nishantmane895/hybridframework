@@ -39,6 +39,10 @@ ExtentTest logger;
 	@FindBy(linkText="Accounts")
 	WebElement lnk_Accounts;
 	
+	@FindBy(linkText="New Contact")
+	WebElement lnk_newContact;
+	
+	
 	
 	public void verifyLogout()
 	{
@@ -59,6 +63,12 @@ ExtentTest logger;
 	{
 		cf.ClickElement(lnk_NewAccount,"New Account link clicked successfully");
 	}
+	
+	public void ClickNewContact()
+	{
+		cf.ClickElement(lnk_newContact,"New Contact link clicked successfully");
+	}
+	
 	
 
 }
